@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Portfolio of Paul Magadi, a full-stack developer specializing in modern web development, UI/UX design, and scalable web apps.">
+    <meta name="keywords"
+        content="Paul Magadi, Full Stack Developer, Web Developer, UI/UX Designer, Portfolio, Responsive Design, Django, React, Freelance Developer">
+    <meta name="author" content="Paul Magadi">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Paul Magadi - Full Stack Developer">
+    <meta property="og:description"
+        content="Discover the portfolio of Paul Magadi, a web developer passionate about creating modern, responsive websites and web applications.">
+    <meta property="og:image" content="https://yourwebsite.com/images/thumbnail.jpg">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <title>Paul Magadi - Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">Paul <span>M.</span></div>
+
+        <nav class="nav" id="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html" class="active-nav">Services</a>
+            <a href="projects.html">Projects</a>
+            <a href="#" class="contact-btn">Contact</a>
+        </nav>
+
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <button id="lets-talk-btn" class="btn-primary">Let's Talk</button>
+    </header>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <h1>My Services</h1>
+            <div class="services-grid">
+
+                <!-- Service Card 1 -->
+                <div class="service-card">
+                    <div class="service-icon">🌐</div>
+                    <h3>Web Development</h3>
+                    <p>I build responsive, modern, and user-friendly websites that help businesses grow their online
+                        presence.</p>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>UI/UX Design</h3>
+                    <p>I design clean, modern, and user-focused interfaces that provide the best user experience.</p>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3>Web App Development</h3>
+                    <p>I create dynamic web applications tailored to business needs with modern frameworks and
+                        technologies.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-modal">&times;</span>
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+    <div id="toast" class="toast">Message sent successfully!</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
