@@ -19,7 +19,6 @@ html {
     scroll-behavior: smooth;
   }
   
-
 body {
     font-family: var(--font-main);
     background-color: var(--background-color);
@@ -35,6 +34,10 @@ body {
     top: 0;
     background-color: var(--background-color);
     z-index: 1000;
+}
+
+a {
+  text-decoration: none;
 }
 
 .logo {
