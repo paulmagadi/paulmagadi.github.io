@@ -4,18 +4,20 @@ const navMenu = document.getElementById('nav-menu');
 
 menuToggle.addEventListener('click', () => {
   navMenu.classList.toggle('show');
+
+  if(navMenu.classList.contains('show')) {
+    menuToggle.innerHTML = '<i class="fas fa-times"></i>';
+  } else {
+    menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+  }
 });
+
 
 // Modal logic
 const hireMeButton = document.querySelector('.hire-me'); 
 const letsTalkButton = document.getElementById('lets-talk-btn');
-const contactBtn = document.querySelector('.contact-btn');
 const modal = document.getElementById('contact-modal');
 const closeModal = document.getElementById('close-modal');
-
-contactBtn.addEventListener('click', () => {
-    modal.style.display = 'block';
-  });
 
 letsTalkButton.addEventListener('click', () => {
   modal.style.display = 'block';

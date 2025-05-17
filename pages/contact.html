@@ -23,12 +23,12 @@
     <meta property="og:type" content="website">
 
     <!-- Favicon -->
-    <link rel="icon" href="assets/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../assets/favicon_io/favicon.ico" type="image/x-icon">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon_io/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon_io/site.webmanifest">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,23 +41,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <!-- Custome CSS styles -->
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/about.css">
 </head>
 
 <body>
-
     <div class="container">
         <header class="header">
-            <a href="index.html">
+            <a href="../index.html">
                 <div class="logo">Paul <span>M.</span></div>
             </a>
 
             <nav class="nav" id="nav-menu">
-                <a href="index.html" class="active-nav">Home</a>
-                <a href="pages/about.html">About</a>
-                <a href="pages/services.html">Services</a>
-                <a href="pages/projects.html">Projects</a>
-                <a href="pages/contact.html">Contact</a>
+                <a href="../index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./services.html">Services</a>
+                <a href="./projects.html">Projects</a>
+                <a href="./contact.html" class="active-nav">Contact</a>
             </nav>
 
             <div class="menu-toggle" id="menu-toggle">
@@ -67,38 +67,8 @@
             <button id="lets-talk-btn" class="btn-primary">Let's Talk</button>
         </header>
 
-        <section class="hero" id="home">
-            <div class="hero-text">
-                <h1 class="fade-in">Hi, I'm <span>Paul Magadi</span></h1>
-                <h4 class="fade-in">Software Developer.</h4><br>
-                <p class="fade-in">Passionate about sustainable tech and innovative solutions. Open-source contributor &
-                    lifelong learner.</p>
-                <div class="hero-buttons fade-in">
-                    <button class="btn-primary hire-me">Hire Me</button>
-                    <a href="projects.html"><button class="btn-outline">See Projects</button></a>
-                </div>
 
-                <div class="social-icons fade-in">
-                    <a href="https://github.com/paulmagadi" target="_blank" rel="noopener noreferrer" title="https://github.com/paulmagadi"><i
-                            class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/paulmagadi/" target="_blank" rel="noopener noreferrer" title="https://www.linkedin.com/in/paulmagadi/"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-x-twitter"></i></a>
-                    <!-- <a href="https://wa.me/254700817233?text=Hello there"><i class="fab fa-whatsapp"></i></a> -->
-                </div>
-            </div>
-
-            <div class="hero-image fade-in">
-                <img src="assets/images/paul001.png" alt="Paul Magadi">
-            </div>
-
-        </section>
-
-        <!-- <div class="section-break">
-
-        </div> -->
-
-        <!-- Contact Modal -->
+        <!-- Modal and Toast (copy them here too!) -->
         <div id="contact-modal" class="modal">
             <div class="modal-content">
                 <span class="close-btn" id="close-modal">&times;</span>
@@ -111,11 +81,13 @@
                 </form>
             </div>
         </div>
+
         <div id="toast" class="toast">Message sent successfully!</div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+        <script src="../assets/js/main.js"></script>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
-    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
