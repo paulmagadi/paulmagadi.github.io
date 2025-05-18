@@ -1,35 +1,35 @@
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .services-section {
-    margin-bottom: 2rem;
-    padding: 0 1em;
+  margin-bottom: 2rem;
+  padding: 0 1em;
 }
 
 .services-section .heading {
-    margin: 2rem 0;
-    color: var(--primary-color);
-    font-size: 1.3rem;
-    font-family: "Poetsen One", sans-serif;
+  margin: 2rem 0;
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  font-family: "Poetsen One", sans-serif;
 }
 
 .service-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    flex: 1 auto;
-    gap: 1em;
-    margin-top: 2rem;
-    border: 1px solid black;
-    padding: 1em;
-    border-radius: 8px;
-    background-color: rgb(241, 241, 241);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 1 auto;
+  gap: 1em;
+  margin-top: 2rem;
+  border: 1px solid black;
+  padding: 1em;
+  border-radius: 8px;
+  background-color: rgb(241, 241, 241);
 }
 
 .service-container .service {
-    width: 50%;
+  width: 50%;
 }
 
 .service .icon {
@@ -49,18 +49,21 @@ body {
 } */
 
 .service-illustration img {
-    width: 100%;
-    max-width: 300px;
+  width: 100%;
+  max-width: 300px;
 }
 
 @media(max-width: 768px) {
-    .service-container {
+  .service-container {
     gap: 2em;
     flex-direction: column;
-}
+  }
+  .service-container:nth-child(odd) {
+    flex-direction: column-reverse;
+  }
 
-.service-container .service {
+  .service-container .service {
     width: 100%;
-}
-}
+  }
 
+}
