@@ -35,10 +35,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
 
-    <title>Paul Magadi - Portfolio</title>
+    <title>Paul Magadi - Portfolio | About Me</title>
 
     <!-- Font Awesome Icons CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+    <!-- AOS (Animate on Scroll) Library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 
     <!-- Custome CSS styles -->
     <link rel="stylesheet" href="../assets/css/main.css">
@@ -46,7 +51,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container about-page">
         <header class="header">
             <a href="../index.html">
                 <div class="logo">Paul <span>M.</span></div>
@@ -64,40 +69,119 @@
                 <i class="fas fa-bars"></i>
             </div>
 
-            <button id="lets-talk-btn" class="btn-primary">Let's Talk</button>
+            <a href="https://wa.me/254700817233?text=Hello there" class="whatsapp-link"><button
+                    class="btn-primary">WhatsApp</button></a>
         </header>
 
         <!-- About Section -->
         <section class="about">
-            <div class="container">
-                <h1 class="fade-in">About Me:</h1>
-                <div class="about-content">
-                    <div class="about-text">
-                        <!-- <h2>Hello! I'm <span>Paul Magadi</span></h2> -->
-                        <p class="fade-in">
-                            I'm a passionate Developer who loves building beautiful and
-                            functional digital experiences.
-                            I specialize in Frontend Development (UI/UX), Backend and API Development, and Mobile App
-                            Development. I love turning ideas into reality.
-                        </p>
-                        <p class="fade-in">
-                            With over 3 years of experience and a strong commitment to continuous learning, I help
-                            businesses
-                            and individuals grow through effective digital solutions.
-                        </p>
+            <h1 class="heading fade-in">About Me:</h1>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="fade-in">
+                        I'm a passionate Developer who loves building beautiful and
+                        functional digital experiences.
+                        I specialize in Frontend Development (UI/UX), Backend and API Development, and Mobile App
+                        Development. I love turning ideas into reality.
+                    </p>
+                    <p class="fade-in">
+                        With over 3 years of experience and a strong commitment to continuous learning, I help
+                        businesses
+                        and individuals grow through effective digital solutions.
+                    </p>
 
-                        <div class="about-btns fade-in">
-                            <button type="button" class="btn-primary" title="Download Resume">Download Resume</button>
-                            <a href="" title="View Resume"><button type="button" class="btn-outline">View
-                                    Resume</button></a>
-                        </div>
+                    <div class="about-btns fade-in">
+                        <button type="button" class="btn-primary" title="Download Resume">Download Resume</button>
+                        <a href="" title="View Resume"><button type="button" class="btn-outline">View
+                                Resume</button></a>
                     </div>
-                    <div class="about-image fade-in">
-                        <img src="../assets/images/paul.jpg" alt="Profile Picture">
-                    </div>
+                </div>
+                <div class="about-image fade-in">
+                    <img src="../assets/images/paul.jpg" alt="Profile Picture">
                 </div>
             </div>
         </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section">
+
+            <div class="tech-skills fade-in">
+                <h3 class="heading fade-in">Technical Skills</h3>
+
+                <!-- Web Development -->
+                <div class="skill-category">
+                    <h4><i class="fas fa-globe"></i> Web Development</h4>
+                    <div class="skills-grid">
+                        <div class="skill"><i class="fab fa-html5"></i> HTML, CSS</div>
+                        <div class="skill"><i class="fab fa-bootstrap"></i> Bootstrap, Tailwind</div>
+                        <div class="skill"><i class="fab fa-js"></i> JavaScript</div>
+                        <div class="skill"><i class="fab fa-react"></i> React.js</div>
+                        <div class="skill"><i class="fab fa-svelte"></i> Svelte</div>
+                        <div class="skill"><i class="fas fa-fire"></i> Django, Flask</div>
+                    </div>
+                </div>
+
+                <!-- Mobile Development -->
+                <div class="skill-category">
+                    <h4><i class="fas fa-mobile-alt"></i> Mobile Development</h4>
+                    <div class="skills-grid">
+                        <div class="skill"><i class="fab fa-google"></i> Dart, Flutter</div>
+                        <div class="skill"><i class="fab fa-android"></i> Java, Kotlin</div>
+                        <div class="skill"><i class="fab fa-apple"></i> Swift</div>
+                        <div class="skill"><i class="fas fa-fire"></i> Firebase</div>
+                    </div>
+                </div>
+
+                <!-- Backend & APIs -->
+                <div class="skill-category">
+                    <h4><i class="fas fa-server"></i> Backend & API Development</h4>
+                    <div class="skills-grid">
+                        <div class="skill"><i class="fab fa-python"></i> Python</div>
+                        <div class="skill"><i class="fas fa-code-branch"></i> REST API / FastAPI</div>
+                        <div class="skill"><i class="fas fa-fire"></i> Django, Flask</div>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="skill-category">
+                    <h4><i class="fas fa-database"></i> Databases</h4>
+                    <div class="skills-grid">
+                        <div class="skill">SQL / MySQL</div>
+                        <div class="skill">PostgreSQL</div>
+                        <div class="skill">MongoDB</div>
+                    </div>
+                </div>
+
+                <!-- DevOps & Tools -->
+                <div class="skill-category">
+                    <h4><i class="fas fa-tools"></i> DevOps & Tools</h4>
+                    <div class="skills-grid">
+                        <div class="skill"><i class="fab fa-git-alt"></i> Git & GitHub</div>
+                        <div class="skill"><i class="fab fa-docker"></i> Docker</div>
+                        <div class="skill"><i class="fas fa-cloud"></i> AWS</div>
+                    </div>
+                </div>
+
+                <!-- Design -->
+                <div class="skill-category">
+                    <h4><i class="fas fa-pencil-ruler"></i> Design</h4>
+                    <div class="skills-grid">
+                        <div class="skill"><i class="fab fa-figma"></i> Figma</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="administrative-skills fade-in">
+                <h3 class="heading fade-in">Administrative Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill"><i class="fas fa-tasks"></i> Planning, Organizing & Leading</div>
+                    <div class="skill"><i class="fas fa-clock"></i> Time Management</div>
+                    <div class="skill"><i class="fas fa-comments"></i> Communication (Oral & Written)</div>
+                </div>
+            </div>
+        </section>
+
     </div>
 
 
@@ -119,6 +203,13 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
     <script src="../assets/js/main.js"></script>
 </body>
 

@@ -4,6 +4,9 @@
   --secondary-color: #000000;
   --background-color: #e3e3e3;
   --btn-text-color: #ffffff;
+  
+  --color-secondary-light: #e0f7fa;
+  --text-color: #333;
   --font-main: 'Poppins', sans-serif;
   --transition-speed: 0.5s;
 }
@@ -30,6 +33,7 @@ body {
   max-width: 1100px;
   margin: 0 auto;
 }
+
 
 .header {
   display: flex;
@@ -108,7 +112,6 @@ a.active-nav {
   font-size: 1.8rem;
   cursor: pointer;
 }
-
 
 /* Buttons  */
 .btn-primary {
@@ -206,7 +209,6 @@ a.active-nav {
   transition: var(--transition-speed);
 }
 
-
 /* Hero Image Section  */
 .hero-image {
   flex: 1;
@@ -236,7 +238,7 @@ a.active-nav {
 }
 
 .hero-image::after {
-  content: "Paul Magadi";
+  content: "I bring both strategic vision and practical execution. ";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -247,7 +249,8 @@ a.active-nav {
   justify-content: center;
   align-items: center;
   color: white;
-  font-weight: 800;
+  font-weight: 600;
+  padding: 0 10px;
   border-radius: 0 0 8px 8px;
 }
 
@@ -284,13 +287,6 @@ a.active-nav {
     transform: translateY(0);
   }
 }
-
-.section-break {
-  height: 50px;
-  width: 100%;
-  background-color: var(--primary-color);
-}
-
 
 /* Modal styles */
 .modal {
@@ -387,7 +383,6 @@ a.active-nav {
   }
 }
 
-
 /* Responsive */
 @media (max-width: 768px) {
   .nav {
@@ -426,7 +421,7 @@ a.active-nav {
     display: block;
   }
 
-  #lets-talk-btn {
+  .whatsapp-link {
     display: none;
   }
 

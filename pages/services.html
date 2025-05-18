@@ -35,69 +35,110 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
 
-    <title>Paul Magadi - Portfolio</title>
+    <title>Paul Magadi - Portfolio | Services</title>
 
     <!-- Font Awesome Icons CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
+    <!-- AOS (Animate on Scroll) Library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
     <!-- Custome CSS styles -->
     <link rel="stylesheet" href="../assets/css/main.css">
-    <link rel="stylesheet" href="../assets/css/about.css">
+    <link rel="stylesheet" href="../assets/css/services.css">
 </head>
 
 <body>
 
-    <header class="header">
-        <a href="../index.html">
-            <div class="logo">Paul <span>M.</span></div>
-        </a>
+    <div class="container">
+        <header class="header">
+            <a href="../index.html">
+                <div class="logo">Paul <span>M.</span></div>
+            </a>
 
-        <nav class="nav" id="nav-menu">
-            <a href="../index.html">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./services.html" class="active-nav">Services</a>
-            <a href="./projects.html">Projects</a>
-            <a href="./contact.html">Contact</a>
-        </nav>
+            <nav class="nav" id="nav-menu">
+                <a href="../index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./services.html" class="active-nav">Services</a>
+                <a href="./projects.html">Projects</a>
+                <a href="./contact.html">Contact</a>
+            </nav>
 
-        <div class="menu-toggle" id="menu-toggle">
-            <i class="fas fa-bars"></i>
-        </div>
-
-        <button id="lets-talk-btn" class="btn-primary">Let's Talk</button>
-    </header>
-
-    <!-- Services Section -->
-    <section class="services">
-        <div class="container">
-            <h1>My Services</h1>
-            <div class="services-grid">
-
-                <!-- Service Card 1 -->
-                <div class="service-card">
-                    <div class="service-icon">🌐</div>
-                    <h3>Web Development</h3>
-                    <p>I build responsive, modern, and user-friendly websites that help businesses grow their online
-                        presence.</p>
-                </div>
-
-                <!-- Service Card 2 -->
-                <div class="service-card">
-                    <div class="service-icon">🎨</div>
-                    <h3>UI/UX Design</h3>
-                    <p>I design clean, modern, and user-focused interfaces that provide the best user experience.</p>
-                </div>
-
-                <!-- Service Card 3 -->
-                <div class="service-card">
-                    <div class="service-icon">⚙️</div>
-                    <h3>Web App Development</h3>
-                    <p>I create dynamic web applications tailored to business needs with modern frameworks and
-                        technologies.</p>
-                </div>
-
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
             </div>
-        </div>
+
+            <a href="https://wa.me/254700817233?text=Hello there" class="whatsapp-link" target="_blank"
+                rel="noopener"><button class="btn-primary">WhatsApp</button></a>
+        </header>
+
+        <!-- Services Section -->
+        <section class="services-section">
+            <h1 class="heading fade-in">My Services:</h1>
+
+            <div class="service-container">
+                <div class="service" data-aos="fade-right">
+                    <h4><i class="fas fa-code icon"></i> Web Development</h4><br>
+                    <p>I specialize in building responsive and user-friendly websites using HTML5, CSS3, JavaScript,
+                        and frameworks like React and Django to create seamless, high-performing interfaces.</p>
+                </div>
+                <div class="service-illustration" data-aos="fade-left"><img src="../assets/images/web-dev.svg"
+                        alt="Web Development"></div>
+            </div>
+
+            <div class="service-container">
+                <div class="service-illustration" data-aos="fade-right"><img src="../assets/images/mobile-dev.svg"
+                        alt="Mobile App Development"></div>
+                <div class="service" data-aos="fade-left">
+                    <h4><i class="fas fa-mobile-alt icon"></i> Mobile App Development</h4><br>
+                    <p>I build cross-platform mobile apps using Flutter, React Native, and Kotlin, delivering
+                        performant and beautiful mobile experiences on Android and iOS.</p>
+                </div>
+            </div>
+
+            <div class="service-container">
+                <div class="service" data-aos="fade-right">
+                    <h4><i class="fas fa-database icon"></i> Database Development</h4><br>
+                    <p>I design, optimize, and maintain relational and non-relational databases like PostgreSQL,
+                        MySQL, and MongoDB for scalable application backends.</p>
+                </div>
+                <div class="service-illustration" data-aos="fade-left"><img src="../assets/images/database.svg"
+                        alt="Database"></div>
+            </div>
+
+            <div class="service-container">
+                <div class="service-illustration" data-aos="fade-right"><img src="../assets/images/ui-ux.svg"
+                        alt="UX/UI Design"></div>
+                <div class="service" data-aos="fade-left">
+                    <h4><i class="fas fa-pencil-ruler icon"></i> UX/UI Design</h4><br>
+                    <p>I craft intuitive and engaging user interfaces using design tools like Figma and Adobe XD,
+                        ensuring both form and function align with user needs.</p>
+                </div>
+            </div>
+
+            <div class="service-container">
+                <div class="service" data-aos="fade-right">
+                    <h4><i class="fas fa-robot icon"></i> Artificial Intelligence</h4><br>
+                    <p>I explore AI and machine learning with Python, applying frameworks like TensorFlow and OpenCV
+                        to solve real-world problems intelligently.</p>
+                </div>
+                <div class="service-illustration" data-aos="fade-left"><img src="../assets/images/ai.svg" alt="AI">
+                </div>
+            </div>
+
+            <div class="service-container">
+                <div class="service-illustration" data-aos="fade-right">
+                    <img src="../assets/images/api.svg" alt="API Development">
+                </div>
+                <div class="service" data-aos="fade-left">
+                    <h4><i class="fas fa-plug icon"></i> API Development</h4><br>
+                    <p>I design and develop scalable RESTful APIs using Django REST Framework and Node.js, enabling
+                        seamless integration between frontend and backend systems. I also work with external APIs
+                        and implement secure authentication and data exchange mechanisms.</p>
+                </div>
+            </div>
+
+    </div>
     </section>
 
     <!-- Contact Modal -->
@@ -114,6 +155,13 @@
         </div>
     </div>
     <div id="toast" class="toast">Message sent successfully!</div>
+    </div>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
     <script src="../assets/js/main.js"></script>

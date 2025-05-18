@@ -14,19 +14,14 @@ menuToggle.addEventListener('click', () => {
 
 
 // Modal logic
-const hireMeButton = document.querySelector('.hire-me'); 
-const letsTalkButton = document.getElementById('lets-talk-btn');
+const letsTalkButton = document.querySelector('.lets-talk-btn');
 const modal = document.getElementById('contact-modal');
 const closeModal = document.getElementById('close-modal');
 
-letsTalkButton.addEventListener('click', () => {
-  modal.style.display = 'block';
-});
-
-if (hireMeButton) {
-    hireMeButton.addEventListener('click', () => {
-        modal.style.display = 'block';
-      });
+if(letsTalkButton) {
+  letsTalkButton.addEventListener('click', () => {
+      modal.style.display = 'block';
+  });
 }
 
 closeModal.addEventListener('click', () => {
@@ -46,7 +41,7 @@ function showToast() {
 
   setTimeout(() => {
     toast.classList.remove('show');
-  }, 3000); // Toast visible for 3 seconds
+  }, 3000); 
 }
 
 // Handle Contact Form Submission
