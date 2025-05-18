@@ -4,7 +4,7 @@
   --secondary-color: #000000;
   --background-color: #e3e3e3;
   --btn-text-color: #ffffff;
-  
+
   --color-secondary-light: #e0f7fa;
   --text-color: #333;
   --font-main: 'Poppins', sans-serif;
@@ -395,6 +395,7 @@ a.active-nav {
     display: none;
     border-bottom-left-radius: 8px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    gap: 0;
   }
 
   .nav.show {
@@ -404,7 +405,7 @@ a.active-nav {
 
   .nav a {
     width: 100%;
-    padding: .5em 1em;
+    padding: 1em;
   }
 
   @keyframes slideInNav {

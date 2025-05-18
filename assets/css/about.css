@@ -117,6 +117,7 @@
 .skill-category .skill {
     padding: 1em;
     border: 1px dotted black;
+    background-color: var(--background-color);
 }
 
 
