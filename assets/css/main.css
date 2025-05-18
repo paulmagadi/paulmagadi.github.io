@@ -34,6 +34,10 @@ body {
   margin: 0 auto;
 }
 
+.home-page {
+  margin-bottom: 2rem;
+}
+
 
 .header {
   display: flex;
@@ -234,7 +238,7 @@ a.active-nav {
   height: 100px;
   z-index: -1;
   border-radius: 100% 100% 8px 8px;
-  opacity: 0.8;
+  opacity: 0.75;
 }
 
 .hero-image::after {
@@ -356,7 +360,7 @@ a.active-nav {
   padding: 1rem;
   position: fixed;
   z-index: 2000;
-  bottom: 30px;
+  top: 30px;
   right: 30px;
   font-size: 1rem;
   opacity: 0;

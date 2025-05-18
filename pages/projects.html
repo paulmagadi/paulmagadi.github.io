@@ -42,80 +42,106 @@
 
     <!-- Custome CSS styles -->
     <link rel="stylesheet" href="../assets/css/main.css">
-    <link rel="stylesheet" href="../assets/css/about.css">
+    <link rel="stylesheet" href="../assets/css/projects.css">
 </head>
 
 <body>
+    <div class="container projects-page">
+        <header class="header">
+            <a href="../index.html">
+                <div class="logo">Paul <span>M.</span></div>
+            </a>
 
-    <header class="header">
-        <a href="../index.html">
-            <div class="logo">Paul <span>M.</span></div>
-        </a>
+            <nav class="nav" id="nav-menu">
+                <a href="../index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./services.html">Services</a>
+                <a href="./projects.html" class="active-nav">Projects</a>
+                <a href="./contact.html">Contact</a>
+            </nav>
 
-        <nav class="nav" id="nav-menu">
-            <a href="../index.html">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./services.html">Services</a>
-            <a href="./projects.html" class="active-nav">Projects</a>
-            <a href="./contact.html">Contact</a>
-        </nav>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
 
-        <div class="menu-toggle" id="menu-toggle">
-            <i class="fas fa-bars"></i>
-        </div>
+            <a href="https://wa.me/254700817233?text=Hello there" class="whatsapp-link" target="_blank"
+                rel="noopener"><button class="btn-primary">WhatsApp</button></a>
+        </header>
 
-        <a href="https://wa.me/254700817233?text=Hello there" class="whatsapp-link" target="_blank" rel="noopener"><button class="btn-primary">WhatsApp</button></a>
-    </header>
+        <!-- Projects Section -->
+        <section class="projects-section">
+            <h2 class="heading">Featured Projects</h2>
 
-    <!-- Projects Section -->
-    <section class="projects">
-        <div class="container">
-            <h1>My Projects</h1>
-            <div class="projects-grid">
-
-                <!-- Project Card 1 -->
-                <div class="project-card">
-                    <img src="project1.jpg" alt="Project 1">
-                    <h3>Project Title 1</h3>
-                    <p>Brief description of what this project does or solves.</p>
-                    <a href="#" class="btn-primary" target="_blank">View Project</a>
+            <!-- Project Card 1 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="../assets/images/backend-coding.png" alt="EcoFashion Marketplace Screenshot">
                 </div>
-
-                <!-- Project Card 2 -->
-                <div class="project-card">
-                    <img src="project2.jpg" alt="Project 2">
-                    <h3>Project Title 2</h3>
-                    <p>Brief description of what this project does or solves.</p>
-                    <a href="#" class="btn-primary" target="_blank">View Project</a>
+                <div class="project-content">
+                    <h3 class="project-title">EcoFashion Marketplace</h3>
+                    <p class="project-description">
+                        A sustainable fashion e-commerce platform with user and guest carts, category filters, product
+                        traceability, and an admin dashboard. Built to align with SDG 12 - Responsible Consumption.
+                    </p>
+                    <ul class="project-tech">
+                        <li>Django</li>
+                        <li>PostgreSQL</li>
+                        <li>Tailwind CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://live-link.com" class="btn" target="_blank">Live Demo</a>
+                        <a href="https://github.com/paulmagadi/ecofashion" class="btn btn-secondary"
+                            target="_blank">GitHub</a>
+                    </div>
                 </div>
+            </div>
 
-                <!-- Project Card 3 -->
-                <div class="project-card">
-                    <img src="project3.jpg" alt="Project 3">
-                    <h3>Project Title 3</h3>
-                    <p>Brief description of what this project does or solves.</p>
-                    <a href="#" class="btn-primary" target="_blank">View Project</a>
+            <!-- Project Card 2 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="../assets/images/backend-coding.png" alt="GitHub Business Card Screenshot">
                 </div>
+                <div class="project-content">
+                    <h3 class="project-title">GitHub Business Card Generator</h3>
+                    <p class="project-description">
+                        A web app that takes a GitHub profile URL and generates a business card with profile photo, bio,
+                        and repository stats. Features client-server architecture and responsive design.
+                    </p>
+                    <ul class="project-tech">
+                        <li>Django REST Framework</li>
+                        <li>React</li>
+                        <li>CSS Grid</li>
+                        <li>GitHub API</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github-card-demo.com" class="btn" target="_blank">Live Demo</a>
+                        <a href="https://github.com/paulmagadi/github-card" class="btn btn-secondary"
+                            target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Add more project cards below -->
+        </section>
+
+
+        <!-- Modal and Toast (copy them here too!) -->
+        <div id="contact-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" id="close-modal">&times;</span>
+                <h2>Contact Me</h2>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
             </div>
         </div>
-    </section>
 
-    <!-- Modal and Toast (copy them here too!) -->
-    <div id="contact-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" id="close-modal">&times;</span>
-            <h2>Contact Me</h2>
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit" class="btn-primary">Send Message</button>
-            </form>
-        </div>
+        <div id="toast" class="toast">Message sent successfully!</div>
     </div>
-
-    <div id="toast" class="toast">Message sent successfully!</div>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
