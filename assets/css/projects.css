@@ -15,7 +15,6 @@
   font-family: "Poetsen One", sans-serif;
 }
 
-
 .project-card {
   display: flex;
   flex-wrap: wrap;
@@ -73,7 +72,9 @@
 }
 
 .project-links {
-  margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
 }
 
 .btn-primary:hover,

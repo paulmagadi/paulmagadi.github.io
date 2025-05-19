@@ -80,61 +80,10 @@
                 <button class="filter-btn" data-filter="design">Design</button>
                 <button class="filter-btn" data-filter="all">All</button>
             </div>
-
-            <!-- Project Card 1 -->
-            <div class="project-card" data-category="featured">
-                <div class="project-image">
-                    <img src="https://github.com/paulmagadi/speech-to-text-converter/blob/main/speach-to-text.png?raw=true"
-                        alt="EcoFashion Marketplace Screenshot">
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">EcoFashion Marketplace</h3>
-                    <p class="project-description">
-                        A sustainable fashion e-commerce platform with user and guest carts, category filters, product
-                        traceability, and an admin dashboard. Built to align with SDG 12 - Responsible Consumption.
-                    </p>
-                    <ul class="project-tech">
-                        <li>Django</li>
-                        <li>PostgreSQL</li>
-                        <li>Tailwind CSS</li>
-                        <li>JavaScript</li>
-                    </ul>
-                    <div class="project-links">
-                        <a href="https://github-card-demo.com" class="btn-live btn-primary" target="_blank">Live</a>
-                        <a href="https://github.com/paulmagadi/github-card" class="btn-github btn-outline" target="_blank">Github</a>
-                        <a href="https://github.com/paulmagadi/github-card" class="btn-github btn-outline" target="_blank">Youtube</a>
-                    </div>
-                </div>
+            <div class="project-grid">
+                <!-- Projects will be injected here by JS -->
             </div>
 
-            <!-- Project Card 2 -->
-            <div class="project-card" data-category="web">
-                <div class="project-image">
-                    <img src="https://github.com/paulmagadi/digital-clock/blob/main/digital-clock.png?raw=true"
-                        alt="GitHub Business Card Screenshot">
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">GitHub Business Card Generator</h3>
-                    <p class="project-description">
-                        A web app that takes a GitHub profile URL and generates a business card with profile photo, bio,
-                        and repository stats. Features client-server architecture and responsive design.
-                    </p>
-                    <ul class="project-tech">
-                        <li>Django REST Framework</li>
-                        <li>React</li>
-                        <li>CSS Grid</li>
-                        <li>GitHub API</li>
-                    </ul>
-                    <div class="project-links">
-                        <a href="https://github-card-demo.com" class="btn-live btn-primary" target="_blank">Live
-                            Demo</a>
-                        <a href="https://github.com/paulmagadi/github-card" class="btn-github btn-outline"
-                            target="_blank">GitHub</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Add more project cards below -->
         </section>
 
 
@@ -155,34 +104,9 @@
         <div id="toast" class="toast">Message sent successfully!</div>
     </div>
 
-
-    <script>
-        const filterButtons = document.querySelectorAll('.filter-btn');
-        const projects = document.querySelectorAll('.project-card');
-
-        filterButtons.forEach(btn => {
-            btn.addEventListener('click', () => {
-                document.querySelector('.filter-btn.active').classList.remove('active');
-                btn.classList.add('active');
-
-                const filter = btn.getAttribute('data-filter');
-
-                projects.forEach(project => {
-                    const category = project.getAttribute('data-category');
-                    if (filter === 'all' || category === filter) {
-                        project.classList.add('show');
-                    } else {
-                        project.classList.remove('show');
-                    }
-                });
-            });
-        });
-
-        // Trigger default filter on load
-        document.querySelector('.filter-btn[data-filter="featured"]').click();
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
     <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/projects.js"></script>
 </body>
 
 </html>
