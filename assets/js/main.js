@@ -48,14 +48,16 @@ function showToast() {
 }
 
 // Handle Contact Form Submission
-const contactForm = document.querySelector('.contact-form');
+const contactForm = document.querySelector('.contact-me-form');
 
 if(contactForm) {
 contactForm.addEventListener('submit', function(e) {
   e.preventDefault(); // Prevent actual form submission
 
   // Close modal
-  modal.style.display = 'none';
+ if(modal) {
+   modal.style.display = 'none';
+ }
 
   // Show toast
   showToast();

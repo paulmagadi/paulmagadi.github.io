@@ -68,7 +68,7 @@
             </div>
 
             <a href="https://wa.me/254700817233?text=Hello there" class="whatsapp-link" target="_blank"
-                rel="noopener"><button class="btn-primary">WhatsApp</button></a>
+                rel="noopener" title="https://wa.me/254700817233"><button class="btn-primary">WhatsApp</button></a>
         </header>
 
 
@@ -76,17 +76,17 @@
             <div class="heading fade-in">Contact Me</div>
             <div class="contact-items-container">
                 <div class="send-message-form fade-in">
-                    <form action="">
+                    <form action="" class="contact-me-form">
                         <div class="input-group" id="search">
-                            <input type="text" id="name" placeholder="">
+                            <input type="text" id="name" placeholder="" required>
                             <label for="todo-input">Enter your name</label>
                         </div>
                         <div class="input-group" id="search">
-                            <input type="email" id="email" placeholder="">
+                            <input type="email" id="email" placeholder="" required>
                             <label for="todo-input">Enter your Email</label>
                         </div>
                         <div class="input-group" id="search">
-                            <textarea type="text" id="message" placeholder="" rows="6"></textarea>
+                            <textarea type="text" id="message" placeholder="" rows="6" required></textarea>
                             <label for="todo-input">Enter your message</label>
                         </div>
                         <br>
@@ -96,11 +96,13 @@
 
                 <div class="contact-details-container">
                     <div class="social-icons fade-in">
-                        <a href="https://www.linkedin.com/in/paulmagadi/" target="_blank" rel="noopener noreferrer"
-                            title="https://www.linkedin.com/in/paulmagadi/"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-x-twitter"></i></a>
-                        <a href="https://wa.me/254700817233?text=Hello there"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/paulsqmagadi/" target="_blank" rel="noopener noreferrer"
+                            title="https://www.instagram.com/paulsqmagadi/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://web.facebook.com/paulsqmagadi" target="_blank" rel="noopener noreferrer"
+                            title="https://web.facebook.com/paulsqmagadi"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/paulsqmagadi" target="_blank" rel="noopener noreferrer"
+                            title="https://x.com/paulsqmagadi"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://wa.me/254700817233?text=Hello there" title="https://wa.me/254700817233"><i class="fab fa-whatsapp"></i></a>
                     </div>
                     <div class="contact-details fade-in">
                         <div class="contact-email">
@@ -136,12 +138,12 @@
                         <button type="submit" class="btn-primary">Send Message</button>
                 </form>
             </div>
-        </div>
+        </div> -->
 
         <div id="toast" class="toast">Message sent successfully!</div>
-    </div> -->
+    </div>
 
-    
+
     <!-- AOS JS -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>

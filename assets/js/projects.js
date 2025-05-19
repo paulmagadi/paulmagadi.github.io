@@ -9,22 +9,22 @@ const projectObj = [
     category: "featured"
   },
   {
-    title: "GitHub Business Card Generator",
-    image: "https://github.com/paulmagadi/digital-clock/blob/main/digital-clock.png?raw=true",
-    description: "A web app that takes a GitHub profile URL and generates a business card with profile photo, bio, and repository stats. Features client-server architecture and responsive design.",
-    tech: ["Django REST Framework", "React", "CSS Grid", "GitHub API"],
-    liveLink: "https://github-card-demo.com",
-    githubLink: "https://github.com/paulmagadi/github-card",
+    title: "Task List",
+    image: "https://github.com/paulmagadi/task-list/raw/main/task-list.png?raw=true",
+    description: "A feature-rich, persistent task list application with local storage, character counting, and intuitive task management.",
+    tech: ["Javascript", "css3", "localstorage", "dom-manipulation", "tasklist", "todo-list", "todo-app-js"],
+    liveLink: "https://paulmagadi.github.io/task-list/",
+    githubLink: "https://github.com/paulmagadi/task-list",
     category: "web"
   },
   {
-    title: "GitHub Business Card Generator",
-    image: "https://github.com/paulmagadi/digital-clock/blob/main/digital-clock.png?raw=true",
-    description: "A web app that takes a GitHub profile URL and generates a business card with profile photo, bio, and repository stats. Features client-server architecture and responsive design.",
-    tech: ["Django REST Framework", "React", "CSS Grid", "GitHub API"],
-    liveLink: "https://github-card-demo.com",
-    githubLink: "https://github.com/paulmagadi/github-card",
-    category: "mobile"
+    title: "Word and Character Counter",
+    image: "https://github.com/paulmagadi/word-character-counter/blob/main/word-and-character-count.png?raw=true",
+    description: "A simple, responsive web app that counts the number of words and characters in real time. Built using HTML, CSS, and JavaScript.",
+    tech: ["javascript", "html5", "css3", "vanilla-javascript", "word-counter"],
+    liveLink: "https://paulmagadi.github.io/word-character-counter/",
+    githubLink: "https://github.com/paulmagadi/word-character-counter",
+    category: "web"
   },
   {
     title: "GitHub Business Card Generator",
