@@ -17,20 +17,20 @@
     display: flex;
     justify-content: space-between;
     gap: 1em;
-    border: 1px solid black;
-    border-radius: 8px;
-    background-color: rgb(242, 242, 242);
 }
 
 .send-message-form {
     padding: 1em;
     width: 50%;
+    border-radius: 8px;
+    background-color: rgb(242, 242, 242);
 }
 
 .contact-details-container {
     width: 45%;
     padding: 1em;
-    /* background-color: rgb(242, 242, 242); */
+    border-radius: 8px;
+    background-color: rgb(242, 242, 242);
 }
 
 .input-group {

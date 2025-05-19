@@ -3,6 +3,7 @@ const menuToggle = document.getElementById('menu-toggle');
 const navMenu = document.getElementById('nav-menu');
 
 menuToggle.addEventListener('click', () => {
+  console.log('Menu bar clicked');
   navMenu.classList.toggle('show');
 
   if(navMenu.classList.contains('show')) {
@@ -24,9 +25,11 @@ if(letsTalkButton) {
   });
 }
 
+if(closeModal){
 closeModal.addEventListener('click', () => {
   modal.style.display = 'none';
 });
+}
 
 window.addEventListener('click', (e) => {
   if (e.target === modal) {
@@ -47,6 +50,7 @@ function showToast() {
 // Handle Contact Form Submission
 const contactForm = document.querySelector('.contact-form');
 
+if(contactForm) {
 contactForm.addEventListener('submit', function(e) {
   e.preventDefault(); // Prevent actual form submission
 
@@ -59,6 +63,6 @@ contactForm.addEventListener('submit', function(e) {
   // Reset form fields
   contactForm.reset();
 });
-
+}
 
 

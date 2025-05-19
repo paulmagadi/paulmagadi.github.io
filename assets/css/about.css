@@ -92,7 +92,7 @@
 }
 
 .skill-category {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     padding: 1em;
     background-color: rgb(242, 242, 242);
     border-radius: 8px;
@@ -115,7 +115,7 @@
     gap: 0.5rem;
 }
 
-.skill-category .skill {
+.skills-section .skill {
     padding: 1em;
     border: 1px dotted black;
     background-color: var(--background-color);
