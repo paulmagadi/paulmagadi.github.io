@@ -70,12 +70,22 @@
 
         <!-- Projects Section -->
         <section class="projects-section">
-            <h2 class="heading">Featured Projects</h2>
+            <h2 class="heading">My Projects</h2>
+
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="featured">Featured</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="ai">AI</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="all">All</button>
+            </div>
 
             <!-- Project Card 1 -->
-            <div class="project-card">
+            <div class="project-card" data-category="featured">
                 <div class="project-image">
-                    <img src="../assets/images/backend-coding.png" alt="EcoFashion Marketplace Screenshot">
+                    <img src="https://github.com/paulmagadi/speech-to-text-converter/blob/main/speach-to-text.png?raw=true"
+                        alt="EcoFashion Marketplace Screenshot">
                 </div>
                 <div class="project-content">
                     <h3 class="project-title">EcoFashion Marketplace</h3>
@@ -90,17 +100,19 @@
                         <li>JavaScript</li>
                     </ul>
                     <div class="project-links">
-                        <a href="https://live-link.com" class="btn" target="_blank">Live Demo</a>
-                        <a href="https://github.com/paulmagadi/ecofashion" class="btn btn-secondary"
+                        <a href="https://github-card-demo.com" class="btn-live btn-primary" target="_blank">Live
+                            Demo</a>
+                        <a href="https://github.com/paulmagadi/github-card" class="btn-github btn-outline"
                             target="_blank">GitHub</a>
                     </div>
                 </div>
             </div>
 
             <!-- Project Card 2 -->
-            <div class="project-card">
+            <div class="project-card" data-category="web">
                 <div class="project-image">
-                    <img src="../assets/images/backend-coding.png" alt="GitHub Business Card Screenshot">
+                    <img src="https://github.com/paulmagadi/digital-clock/blob/main/digital-clock.png?raw=true"
+                        alt="GitHub Business Card Screenshot">
                 </div>
                 <div class="project-content">
                     <h3 class="project-title">GitHub Business Card Generator</h3>
@@ -115,8 +127,9 @@
                         <li>GitHub API</li>
                     </ul>
                     <div class="project-links">
-                        <a href="https://github-card-demo.com" class="btn" target="_blank">Live Demo</a>
-                        <a href="https://github.com/paulmagadi/github-card" class="btn btn-secondary"
+                        <a href="https://github-card-demo.com" class="btn-live btn-primary" target="_blank">Live
+                            Demo</a>
+                        <a href="https://github.com/paulmagadi/github-card" class="btn-github btn-outline"
                             target="_blank">GitHub</a>
                     </div>
                 </div>
@@ -144,6 +157,31 @@
     </div>
 
 
+    <script>
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projects = document.querySelectorAll('.project-card');
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelector('.filter-btn.active').classList.remove('active');
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                projects.forEach(project => {
+                    const category = project.getAttribute('data-category');
+                    if (filter === 'all' || category === filter) {
+                        project.classList.add('show');
+                    } else {
+                        project.classList.remove('show');
+                    }
+                });
+            });
+        });
+
+        // Trigger default filter on load
+        document.querySelector('.filter-btn[data-filter="featured"]').click();
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
     <script src="../assets/js/main.js"></script>
 </body>

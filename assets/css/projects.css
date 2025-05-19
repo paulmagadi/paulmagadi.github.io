@@ -1,20 +1,20 @@
 :root {
-  /* --secondary-color: #f4f4f4; */
   --text-color: #333;
-  --border-radius: 10px;
+  --border-radius: 8px;
 }
 
 .projects-section {
-  padding: 3rem 2rem;
-  background-color: var(--background-color);
+  margin-bottom: 2rem;
+  padding: 0 1em;
 }
 
 .projects-section .heading {
-  text-align: center;
-  font-size: 2.5rem;
+  margin: 2rem 0;
   color: var(--primary-color);
-  margin-bottom: 2rem;
+  font-size: 1.3rem;
+  font-family: "Poetsen One", sans-serif;
 }
+
 
 .project-card {
   display: flex;
@@ -34,7 +34,9 @@
 .project-image img {
   width: 100%;
   height: 100%;
+  padding: 1em;
   object-fit: cover;
+  border-radius: 21px;
 }
 
 .project-content {
@@ -57,40 +59,23 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
   list-style: none;
   padding: 0;
 }
 
 .project-tech li {
-  background: var(--primary-color);
-  color: white;
+  /* border: 1px dotted var(--primary-color); */
+  color: var(--text-color);
+  background-color: #91919120;
   padding: 0.4rem 0.8rem;
-  border-radius: 5px;
-  font-size: 0.875rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
 }
 
-.project-links .btn {
-  display: inline-block;
-  margin-right: 1rem;
-  padding: 0.6rem 1.2rem;
-  border-radius: 5px;
-  background: var(--primary-color);
-  color: white;
-  text-decoration: none;
-  transition: background 0.3s;
-}
-
-.project-links .btn:hover {
-  background: #3e8e41;
-}
-
-.project-links .btn-secondary {
-  background: #555;
-}
-
-.project-links .btn-secondary:hover {
-  background: #333;
+.btn-primary:hover,
+.btn-outline:hover {
+  transform: scale(0.9);
 }
 
 @media (max-width: 768px) {
@@ -98,3 +83,32 @@
     flex-direction: column;
   }
 }
+
+
+.project-filters {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+  }
+  .filter-btn {
+    background: black;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .filter-btn.active,
+  .filter-btn:hover {
+    background: var(--primary-color);
+    color: white;
+  }
+  .project-card {
+    display: none; 
+  }
+  .project-card.show {
+    display: flex;
+  }
