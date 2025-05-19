@@ -1,0 +1,113 @@
+.contact-page {
+    margin-bottom: 2rem;
+}
+
+.contact-section {
+    padding: 0 1em;
+}
+
+.contact-page .heading {
+    margin: 2rem 0;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    font-family: "Poetsen One", sans-serif;
+}
+
+.contact-items-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: rgb(242, 242, 242);
+}
+
+.send-message-form {
+    padding: 1em;
+    width: 50%;
+}
+
+.contact-details-container {
+    width: 45%;
+    padding: 1em;
+    /* background-color: rgb(242, 242, 242); */
+}
+
+.input-group {
+    position: relative;
+    margin-top: 2em;
+    width: 100%;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 1em;
+    border-radius: 8px;
+    border: 1.5px solid black;
+    outline: none;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    color: #777;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: 0.3s ease;
+    padding: 0.5rem;
+}
+
+input:focus,
+textarea:focus {
+    border: 1.5px solid var(--primary-color);
+}
+
+.input-group input:focus+label,
+.input-group input:not(:placeholder-shown):valid+label {
+    top: -0.8rem;
+    left: 1rem;
+    color: var(--primary-color);
+}
+
+.input-group textarea:focus+label,
+.input-group textarea:not(:placeholder-shown):valid+label {
+    top: -0.8rem;
+    left: 1rem;
+    color: var(--primary-color);
+}
+
+.contact-details {
+    margin-top: 2em;
+}
+
+.contact-details > div {
+    padding: 1em 0;
+}
+
+.contact-email,
+.contact-phone,
+.contact-whatsapp {
+    display: flex;
+    gap: 1em;
+}
+
+.contact-details i {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .contact-items-container {
+        flex-direction: column;
+    }
+
+    .send-message-form {
+        width: 100%;
+    }
+
+    .contact-details-container {
+        width: 100%;
+    }
+}

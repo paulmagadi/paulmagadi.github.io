@@ -39,6 +39,9 @@
 
     <!-- Font Awesome Icons CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+    <!-- AOS (Animate on Scroll) Library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
     <!-- Custome CSS styles -->
     <link rel="stylesheet" href="../assets/css/main.css">
@@ -72,7 +75,7 @@
         <section class="projects-section">
             <h2 class="heading">My Projects</h2>
 
-            <div class="project-filters">
+            <div class="project-filters fade-in">
                 <button class="filter-btn active" data-filter="featured">Featured</button>
                 <button class="filter-btn" data-filter="web">Web</button>
                 <button class="filter-btn" data-filter="mobile">Mobile</button>
@@ -80,7 +83,7 @@
                 <button class="filter-btn" data-filter="design">Design</button>
                 <button class="filter-btn" data-filter="all">All</button>
             </div>
-            <div class="project-grid">
+            <div class="project-grid fade-in">
                 <!-- Projects will be injected here by JS -->
             </div>
 
@@ -103,6 +106,12 @@
 
         <div id="toast" class="toast">Message sent successfully!</div>
     </div>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
     <script src="../assets/js/main.js"></script>
